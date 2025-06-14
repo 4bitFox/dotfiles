@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=View Screencast
+Icon=vokoscreenNG
+Exec=/var/home/cvetkofabian/.local/opt/View-Screencast/view-screencast.sh
+Categories=Office;
+
