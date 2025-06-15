@@ -214,7 +214,7 @@ binds {
     Mod+T hotkey-overlay-title="Open a Terminal" { spawn "alacritty"; }
     Mod+D hotkey-overlay-title="Run an Application" { spawn "fuzzel"; }
     // Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock" "-f" "-F" "-i" "/var/home/cvetkofabian/Pictures/Wallpaper.png"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn "bash" "-c" "niri msg action power-off-monitors && swaylock"; }
+    Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn "bash" "-c" "niri msg action power-off-monitors && hyprlock"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
@@ -486,6 +486,6 @@ environment {
 
 // Laptop lid
 switch-events {
-    lid-close { spawn "bash" "-c" "niri msg action power-off-monitors && swaylock"; }
+    lid-close { spawn "bash" "-c" "niri msg action power-off-monitors && hyprlock"; }
     lid-open { spawn "bash" "-c" "niri msg action power-on-monitors"; }
 }
